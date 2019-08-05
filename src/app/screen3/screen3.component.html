@@ -1,0 +1,47 @@
+<div class="container">
+<div class="box">
+        
+       <b style="font-size:30px;"> Enter the text:</b><br>
+        <textarea class="form-control"  [(ngModel)]="name" ></textarea>
+        
+        <br>
+    
+        <button  (click)="getLength()">Submit</button>
+
+
+
+</div>
+
+<div *ngIf="hideShow"  class="tab">
+      <h3 style="text-align:center;text-shadow: 2px 2px yellow;color:#2F4F4F">RESULTS</h3>
+        <table class="table table-striped table-bordered">
+          <tr>
+                    <td> <b>Words in the text</b></td>
+                    <td>{{wordcount}}</td>
+                 </tr> 
+                 <tr>
+                    <td><b>Word with maximum length</b></td>
+                    <td>{{maxlength}}</td>
+                 </tr> 
+                 <tr>
+                    <td><b>Word with minimum length</b></td>
+                    <td>{{minlength}}</td>
+                 </tr> 
+                 <tr>
+                    <td><b>Number of articles</b></td>
+                    <td>{{articlecount}}</td>
+                 </tr>   
+
+                 <tr>
+                        <td><b>Number of vowels</b></td>
+                        <td>{{vowelcount}}</td>
+                     </tr>   
+
+
+
+
+        </table>
+
+
+</div>
+</div>

@@ -1,0 +1,125 @@
+<div class="example-container">
+    <form [formGroup]="formData" (ngSubmit)="update()">
+    <mat-form-field>
+      <label><b>Year</b></label>
+      <input matInput  formControlName="labels">
+    </mat-form-field>
+  &nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
+    <mat-form-field>
+        <label><b>Issues</b></label>
+      <input  matInput  formControlName="values">
+    </mat-form-field>
+    <br>
+    <button mat-button>Click!</button>
+    
+    </form>
+</div>  
+
+
+
+
+
+
+<!-- <div class="main">
+ 
+<form [formGroup]="formData" (ngSubmit)="update()">
+
+    <div>
+        <label for="name">
+          year
+        </label>
+        <input id="name" type="text" formControlName="labels">
+      </div>
+    
+      <div>
+        <label for="address">
+          Issues
+        </label>
+        <input id="address" type="text" formControlName="values">
+      </div>
+
+  <button >generate</button>
+
+</form>
+ 
+</div>
+ -->
+
+
+  
+  <div class="charts">
+    <h3>Pie Chart</h3><br>
+  <div  class="pie" *ngIf="pieChartData" >
+  <canvas baseChart height="400px" width="400px"
+        
+        [data]="pieChartData"
+        [labels]="pieChartLabels"
+        [options]="pieChartOptions"
+        [chartType]="pieChartType"
+        [colors]="pieChartColors"
+        [legend]="true"
+        
+        
+      ></canvas>
+    </div>
+
+
+    <div class="bar" *ngIf="pieChartData" >
+        <h3>Column Chart</h3><br>
+        <canvas baseChart height="400px" width="100px"
+              
+              [data]="pieChartData"
+              [labels]="pieChartLabels"
+              [options]="lineChartOptions"
+              [chartType]="barChartType"
+              [colors]="pieChartColors"
+              [legend]="true"
+              
+              
+            ></canvas>
+          </div>
+        
+
+          <div class="donut" *ngIf="pieChartData">
+              <h3>Donut Chart</h3><br>
+              <canvas baseChart height="400px" width="400px"
+                    
+                    [data]="pieChartData"
+                    [labels]="pieChartLabels"
+                    [options]="pieChartOptions"
+                    [chartType]="doughnutChartType"
+                    [colors]="pieChartColors"
+                    [legend]="true"
+                    
+                    
+                  ></canvas>
+            </div>
+
+            <div class="column" *ngIf="pieChartData" >
+                <h3>Bar Chart</h3><br>
+                <canvas baseChart height="400px" width="100px"
+                      
+                      [data]="pieChartData"
+                      [labels]="pieChartLabels"
+                      [options]="columnChartOptions"
+                      [chartType]="columnChartType"
+                      [colors]="pieChartColors"
+                      [legend]="true"
+                      
+                      
+                    ></canvas>
+                  </div>
+
+
+
+                  
+            
+    </div>       
+
+            
+
+           
+
+
+    
+

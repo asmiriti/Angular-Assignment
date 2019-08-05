@@ -1,0 +1,19 @@
+<div>
+        
+        <button (click)="randomFunction()" mat-button>RandomData</button>
+        
+        <br><br><br>
+        <!-- <div *ngIf="chart"> -->
+          <div style="width:600px;height:600px;margin:auto">
+            
+              <h1>Line chart</h1>
+              <canvas id="line" #canvasline >{{ chartline }}</canvas>
+
+              <br><br><br><br>
+              <h1>Area chart</h1>
+              <canvas id="area" #canvasarea >{{ chartarea }}</canvas>
+          
+          </div>
+            
+          
+      </div>

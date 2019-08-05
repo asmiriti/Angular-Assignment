@@ -1,0 +1,78 @@
+
+.charts
+{
+    width:60%;
+    margin:auto;
+}
+
+.example-container {
+    
+    
+    height:400px;
+    width:60%;
+    margin:auto;
+    text-align: center;
+  }
+  
+  
+
+.pie
+{
+    margin-bottom:150px;
+}
+
+.text-center
+{
+    color:blue;
+}
+
+.bar
+{
+    height:400px;
+    width:60%;
+    margin:auto;
+    
+}
+
+.donut
+{
+    margin-top:150px;
+    height:400px;
+    width:700px;
+}
+
+/* .column
+{
+    
+        transform: rotate(90deg);
+        transform-origin: center
+      
+} */
+label{
+    color: #778899;
+}
+
+h3{
+    text-align: center;
+    color: #778899;
+}
+
+
+
+
+
+button{
+    color:yellow;
+    background-color: #778899;
+    height:50px;
+    width:100px;
+}
+
+
+.column
+{
+    height:400px;
+    width:80%;
+    margin:auto;
+    margin-top:150px;
+}

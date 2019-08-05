@@ -1,0 +1,42 @@
+.box
+{
+    height:200px;
+    width:700px;
+    margin:auto;
+    text-align: center;
+}
+
+textarea {
+
+    min-width: 700px;
+  }
+
+
+
+
+.form-control
+{
+    width:70%;
+    height:40%;
+}
+
+.tab{
+    height:275px;
+    width:50%;
+    margin:auto;
+    
+}
+
+button{
+    color:yellow;
+    background-color: #778899;
+    height:50px;
+    width:100px;
+}
+
+table{
+    background-color:#778899;
+    color:#ADFF2F;
+    font-size: 20px;
+
+}
